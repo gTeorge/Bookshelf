@@ -6,12 +6,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="styles.css" />
+    <None Include="res\library.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <Compile Include="Domain.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
   <ItemGroup>
     <PackageReference Include="FSharp.Data" Version="4.2.9" />
     <PackageReference Include="Giraffe.ViewEngine" Version="2.0.0-alpha-1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="res\imgs\" />
   </ItemGroup>
 
 </Project>
